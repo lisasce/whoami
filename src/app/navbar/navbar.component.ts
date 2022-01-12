@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import {MatSlideToggleChange} from "@angular/material/slide-toggle";
+
 
 @Component({
   selector: 'who-navbar',
@@ -16,6 +18,17 @@ export class NavbarComponent {
       shareReplay()
     );
 
+  @Input()
+  isDarkMode = false;
+
+  @Output()
+  readonly darkModeSwitched = new EventEmitter<boolean>();
+
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+
+
+  onDarkModeSwitched({ checked }: MatSlideToggleChange) {
+    this.darkModeSwitched.emit(checked);
+  }
 }

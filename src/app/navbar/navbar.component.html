@@ -3,11 +3,23 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+      <span>
+    <mat-slide-toggle
+      [checked]="isDarkMode"
+      (change)="onDarkModeSwitched($event)"
+    >Dark Mode</mat-slide-toggle
+    >
+  </span></mat-toolbar>
     <mat-nav-list>
+      <a mat-list-item href="#">CV pdf De</a>
+      <a mat-list-item href="#">CV pdf En</a>
+      <a mat-list-item><mat-icon aria-hidden="false" aria-label="address">home</mat-icon></a>
+      <who-contact-info></who-contact-info>
+
+
       <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -20,10 +32,10 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>whoami</span>
+      <span>John Doe</span>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <who-dashboard></who-dashboard>
+    <ng-content></ng-content>
 
   </mat-sidenav-content>
 </mat-sidenav-container>

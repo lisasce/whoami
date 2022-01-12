@@ -1,3 +1,7 @@
-<who-navbar></who-navbar>
-<router-outlet></router-outlet>
+<who-navbar (darkModeSwitched)="switchMode($event)"
+            [isDarkMode]="isDarkMode">
+  <who-dashboard></who-dashboard>
+</who-navbar>
+
+<!--<router-outlet></router-outlet>-->
 

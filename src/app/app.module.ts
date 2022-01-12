@@ -19,13 +19,17 @@ import { MatMenuModule } from '@angular/material/menu';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {MatNativeDateModule} from "@angular/material/core";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { MatTreeModule } from '@angular/material/tree';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContactInfoComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +47,9 @@ import {MatNativeDateModule} from "@angular/material/core";
     MatIconModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSlideToggleModule,
+    MatTreeModule
   ],
   providers: [],
   exports: [],

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
 
 @Component({
   selector: 'who-root',
@@ -7,4 +8,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'whoami';
+
+  get isDarkMode(): boolean {
+    return this.currentTheme === 'theme-dark';
+  }
+
+  private currentTheme = 'theme-light';
+
+
+  ngOnInit(): void {
+    this.currentTheme = localStorage.getItem('activeTheme') || 'theme-light';
+    document.body.setAttribute('class', `${this.currentTheme} mat-typography`);
+  }
+
+  switchMode(isDarkMode: boolean) {
+    this.currentTheme = isDarkMode ? 'theme-dark' : 'theme-light';
+    document.body.setAttribute('class', `${this.currentTheme} mat-typography`);
+    localStorage.setItem('activeTheme', this.currentTheme);
+  }
+
+
 }
