@@ -18,7 +18,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import {MatNativeDateModule} from "@angular/material/core";
+import {MatNativeDateModule, MatRippleModule} from "@angular/material/core";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { MatTreeModule } from '@angular/material/tree';
@@ -51,7 +51,8 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
     MatCardModule,
     MatSlideToggleModule,
     MatTreeModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatRippleModule
   ],
   providers: [],
   exports: [],

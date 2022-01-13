@@ -15,7 +15,8 @@
 }
 
 .dashboard-card:hover span{
-  transform: scaleX(1.5) rotateY(180deg);
+  transform: scale(1.5);
+  transition: transform 1s linear;
 }
 
 .fotoclass{

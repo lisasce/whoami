@@ -17,6 +17,8 @@ export interface DashboardCard {
 })
 export class DashboardComponent {
 
+  rippleColor = '#F8BBD0';
+
   /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
