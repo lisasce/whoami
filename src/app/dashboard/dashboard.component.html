@@ -2,7 +2,7 @@
        <mat-grid-list cols="4" rowHeight="100px">
       <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows" >
         <mat-card class="dashboard-card" [style.background]="card.color" [ngClass]="card.title === '' ? 'fotoclass' : ''">
-          {{card.title}}
+          <span>{{card.title}}</span>
         </mat-card>
       </mat-grid-tile>
     </mat-grid-list>

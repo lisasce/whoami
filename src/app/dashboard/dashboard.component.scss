@@ -11,6 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.dashboard-card:hover span{
+  transform: scaleX(1.5) rotateY(180deg);
 }
 
 .fotoclass{
