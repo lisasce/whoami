@@ -8,22 +8,17 @@
     <mat-slide-toggle
       [checked]="isDarkMode"
       (change)="onDarkModeSwitched($event)"
-    >Dark Mode</mat-slide-toggle
+    ><small>Dark Mode</small></mat-slide-toggle
     >
   </span></mat-toolbar>
     <mat-nav-list>
+      <who-contact-info></who-contact-info>
       <a mat-list-item href="#">CV pdf De</a>
       <a mat-list-item href="#">CV pdf En</a>
-      <a mat-list-item><mat-icon aria-hidden="false" aria-label="address">home</mat-icon></a>
-      <who-contact-info></who-contact-info>
-
-
-      <a mat-list-item href="#">Link 1</a>
-
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="accent">
       <button
         type="button"
         aria-label="Toggle sidenav"

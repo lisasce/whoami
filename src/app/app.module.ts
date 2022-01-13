@@ -22,6 +22,7 @@ import {MatNativeDateModule} from "@angular/material/core";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { MatTreeModule } from '@angular/material/tree';
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { MatTreeModule } from '@angular/material/tree';
     MatGridListModule,
     MatCardModule,
     MatSlideToggleModule,
-    MatTreeModule
+    MatTreeModule,
+    MatProgressBarModule
   ],
   providers: [],
   exports: [],

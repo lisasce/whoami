@@ -6,7 +6,7 @@ import { files } from './example-data';
 /** File node data with possible child nodes. */
 export interface FileNode {
   name: string;
-  type: string;
+  type?: string;
   children?: FileNode[];
 }
 
@@ -16,7 +16,7 @@ export interface FileNode {
  */
 export interface FlatTreeNode {
   name: string;
-  type: string;
+  type?: string;
   level: number;
   expandable: boolean;
 }

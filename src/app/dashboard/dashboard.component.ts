@@ -22,20 +22,20 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Professional Experience', cols: 4, rows: 1 },
-          { title: 'Me', cols: 4, rows: 1 },
-          { title: 'Special Skills', cols: 4, rows: 1 },
-          { title: 'Educational Background', cols: 4, rows: 1 },
-          { title: 'Bachelor & Master Theses', cols: 4, rows: 1 }
+          { title: 'Professional Experience', cols: 4, rows: 1, color: '' },
+          { title: 'Me', cols: 4, rows: 1, color: '' },
+          { title: 'Special Skills', cols: 4, rows: 1, color: '' },
+          { title: 'Educational Background', cols: 4, rows: 1, color: '' },
+          { title: 'Bachelor & Master Theses', cols: 4, rows: 1, color: '' }
         ];
       }
 
       return [
-        { title: 'Professional Experience', cols: 3, rows: 2, color: 'lightblue' },
-        { title: 'Me', cols: 1, rows: 4, color: 'lightgreen' },
-        { title: 'Special Skills', cols: 1, rows: 2 },
-        { title: 'Educational Background', cols: 2, rows: 2 },
-        { title: 'Bachelor & Master Theses', cols: 4, rows: 1 }
+        { title: 'Professional Experience', cols: 3, rows: 2, color: '#CFD8DC' },
+        { title: '', cols: 1, rows: 4, color: 'url("https://cdn.pixabay.com/photo/2015/07/20/12/53/gehlert-852762__480.jpg")' },
+        { title: 'Special Skills', cols: 1, rows: 2, color: '#F06292' },
+        { title: 'Educational Background', cols: 2, rows: 2, color: '' },
+        { title: 'Bachelor & Master Theses', cols: 4, rows: 1, color: '#90A4AE' }
       ];
     })
   );

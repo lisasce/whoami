@@ -1,47 +1,25 @@
 /** Example file/folder data. */
 export const files = [
   {
-    name: 'components',
-    type: 'folder',
-    children: [
-      {
-        name: 'src',
-        type: 'folder',
-        children: [
-          {
-            name: 'cdk',
-            type: 'folder',
-            children: [
-              { name: 'package.json', type: 'file' },
-              { name: 'BUILD.bazel', type: 'file' },
-            ]
-          },
-          { name: 'material', type: 'folder' }
-        ]
-      }
+    name: '',
+    type: 'email',
+    children:  [
+      { name: 'john.doe@gmail.com', type: 'email'}
     ]
   },
   {
-    name: 'angular',
-    type: 'folder',
-    children: [
-      {
-        name: 'packages',
-        type: 'folder',
-        children: [
-          { name: '.travis.yml', type: 'file' },
-          { name: 'firebase.json', type: 'file' }
-        ]
-      },
-      { name: 'package.json', type: 'file' }
+    name: '',
+    type: 'phone',
+    children:  [
+      { name: '+43 670 000 00 00', type: 'phone'}
     ]
   },
   {
-    name: 'angularjs',
-    type: 'folder',
+    name: '',
+    type: 'home',
     children: [
-      { name: 'gulpfile.js', type: 'file' },
-      { name: 'README.md', type: 'file' }
+      { name: 'whatever street 5'},
+      { name: 'A-1100 Somewhere'}
     ]
   }
 ];
