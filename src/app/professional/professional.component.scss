@@ -1,0 +1,6 @@
+.professional{
+  position: absolute; // needed here to overwrite mat-card position relative
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

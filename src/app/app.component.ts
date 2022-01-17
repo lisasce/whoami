@@ -8,6 +8,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'whoami';
+  selectedComponentFromCard = '';
 
   get isDarkMode(): boolean {
     return this.currentTheme === 'theme-dark';
@@ -28,4 +29,7 @@ export class AppComponent {
   }
 
 
+  handleCardChange(recievedCardTitle: string) {
+    this.selectedComponentFromCard = recievedCardTitle;
+  }
 }

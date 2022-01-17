@@ -25,3 +25,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .theme-light{
   @include  angular-material-theme($mat-light-theme);
 }
+
+.grid-container {
+  margin: 20px;
+}
+
+.subcard {
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}

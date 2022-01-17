@@ -1,0 +1,7 @@
+.welcome{
+  position: absolute; // needed here to overwrite mat-card position relative
+  // otherwise you could piece Viewencapsulation
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

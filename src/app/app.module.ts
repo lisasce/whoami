@@ -23,6 +23,12 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { MatTreeModule } from '@angular/material/tree';
 import {MatProgressBarModule} from "@angular/material/progress-bar";
+import { ProfessionalComponent } from './professional/professional.component';
+import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { MeComponent } from './me/me.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ThesesComponent } from './theses/theses.component';
 
 
 @NgModule({
@@ -30,7 +36,13 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
     AppComponent,
     NavbarComponent,
     DashboardComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    ProfessionalComponent,
+    EducationComponent,
+    SkillsComponent,
+    MeComponent,
+    WelcomeComponent,
+    ThesesComponent
   ],
   imports: [
     CommonModule,
