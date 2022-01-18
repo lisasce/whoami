@@ -32,9 +32,11 @@ export class MeComponent implements OnInit, OnDestroy {
     if (!isSmall) {
       document.getElementById('polaroidRight')?.classList.remove('hide');
       document.getElementById('polaroidRight')?.classList.add('show');
+      document.getElementById('polaroidLeft')?.classList.remove('centering');
     } else if (isSmall) {
       document.getElementById('polaroidRight')?.classList.remove('show');
       document.getElementById('polaroidRight')?.classList.add('hide');
+      document.getElementById('polaroidLeft')?.classList.add('centering');
     }
   }
 
