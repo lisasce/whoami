@@ -29,6 +29,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { MeComponent } from './me/me.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ThesesComponent } from './theses/theses.component';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { ThesesComponent } from './theses/theses.component';
     MatSlideToggleModule,
     MatTreeModule,
     MatProgressBarModule,
-    MatRippleModule
+    MatRippleModule,
+    MatExpansionModule
   ],
   providers: [],
   exports: [],

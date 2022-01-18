@@ -3,4 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+  overflow-y: scroll;
+}
+.accordion{
+  width: 100%;
+}
+
+.panel-description{
+  display: flex;
+  justify-content: end;
 }

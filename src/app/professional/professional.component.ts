@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./professional.component.scss']
 })
 export class ProfessionalComponent implements OnInit {
-
+  panel1OpenState = false;
+  panel2OpenState = false;
+  panel3OpenState = false;
   constructor() { }
 
   ngOnInit(): void {
