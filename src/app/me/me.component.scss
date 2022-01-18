@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.button-box{
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
 div.polaroidContainer {
   width: 100%;
   padding: 8%;

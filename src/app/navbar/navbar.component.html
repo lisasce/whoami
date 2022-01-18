@@ -1,16 +1,18 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      <span>
-    <mat-slide-toggle
-      [checked]="isDarkMode"
-      (change)="onDarkModeSwitched($event)"
-    ><small>Dark Mode</small></mat-slide-toggle
-    >
-  </span></mat-toolbar>
+        <span>
+          <mat-slide-toggle
+            [checked]="isDarkMode"
+            (change)="onDarkModeSwitched($event)"
+          >
+            <small>Dark Mode</small>
+          </mat-slide-toggle>
+        </span>
+    </mat-toolbar>
     <mat-nav-list>
       <who-contact-info></who-contact-info>
       <a mat-list-item href="#">CV pdf De</a>

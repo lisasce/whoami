@@ -36,3 +36,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   right: 2px;
   bottom: 2px;
 }
+
+a {
+  color: mat-color($primary);
+  text-decoration: none;
+}
+
+a:visited {
+  color: mat-color($accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: mat-color($warn);
+  text-decoration: underline;
+}
