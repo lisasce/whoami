@@ -1,3 +1,9 @@
+@import '~src/theme';
+
+h1{
+  font-weight: bold;
+}
+
 .professional{
   position: absolute; // needed here to overwrite mat-card position relative
   display: flex;

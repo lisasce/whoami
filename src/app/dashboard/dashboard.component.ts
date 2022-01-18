@@ -27,7 +27,7 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Professional Experience', cols: 4, rows: 1, color: '', value: 'professional'  },
+          { title: 'Professional Experiences', cols: 4, rows: 1, color: '', value: 'professional'  },
           { title: 'Me', cols: 4, rows: 1, color: '', value: 'me'  },
           { title: 'Special Skills', cols: 4, rows: 1, color: '', value: 'skills'  },
           { title: 'Educational Background', cols: 4, rows: 1, color: '', value: 'education'  },
