@@ -1,11 +1,11 @@
-.me{
+.me {
   position: absolute; // needed here to overwrite mat-card position relative
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-div.polaroidContainer{
+div.polaroidContainer {
   width: 100%;
   padding: 8%;
   display: flex;
@@ -44,12 +44,15 @@ div.rotate_right {
   width: fit-content;
   max-width: 80%;
   max-height: 80%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset !important;
 }
 
-.hide{
+.hide {
   display: none;
 }
-.show{
+
+.show {
   display: block;
 }

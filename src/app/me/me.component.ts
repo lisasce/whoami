@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import {Breakpoints, BreakpointObserver} from '@angular/cdk/layout';
 import {Subject, takeUntil} from "rxjs";
 
 @Component({
@@ -7,7 +7,7 @@ import {Subject, takeUntil} from "rxjs";
   templateUrl: './me.component.html',
   styleUrls: ['./me.component.scss']
 })
-export class MeComponent implements OnInit, OnDestroy  {
+export class MeComponent implements OnInit, OnDestroy {
   destroyed = new Subject<void>();
 
   constructor(private breakpointObserver: BreakpointObserver) {
@@ -17,10 +17,10 @@ export class MeComponent implements OnInit, OnDestroy  {
   ngOnDestroy(): void {
     this.destroyed.next();
     this.destroyed.complete();
-    }
+  }
 
   ngOnInit(): void {
-    this.breakpointObserver.observe([Breakpoints.XSmall,Breakpoints.Small])
+    this.breakpointObserver.observe([Breakpoints.XSmall, Breakpoints.Small])
       .pipe(takeUntil(this.destroyed))
       .subscribe(result => {
         this.hidePolaroidOnSmallScreen(result.matches)
@@ -28,12 +28,11 @@ export class MeComponent implements OnInit, OnDestroy  {
   }
 
 
-  hidePolaroidOnSmallScreen(isSmall: boolean){
-    if (!isSmall){
+  hidePolaroidOnSmallScreen(isSmall: boolean) {
+    if (!isSmall) {
       document.getElementById('polaroidRight')?.classList.remove('hide');
       document.getElementById('polaroidRight')?.classList.add('show');
-    }
-    else if (isSmall){
+    } else if (isSmall) {
       document.getElementById('polaroidRight')?.classList.remove('show');
       document.getElementById('polaroidRight')?.classList.add('hide');
     }
