@@ -30,6 +30,7 @@ import { MeComponent } from './me/me.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ThesesComponent } from './theses/theses.component';
 import {MatExpansionModule} from "@angular/material/expansion";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import {MatExpansionModule} from "@angular/material/expansion";
     MatTreeModule,
     MatProgressBarModule,
     MatRippleModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTooltipModule
   ],
   providers: [],
   exports: [],
