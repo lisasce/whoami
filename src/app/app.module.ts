@@ -31,6 +31,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ThesesComponent } from './theses/theses.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import {ClipboardModule} from "@angular/cdk/clipboard";
 
 
 @NgModule({
@@ -68,7 +69,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatProgressBarModule,
     MatRippleModule,
     MatExpansionModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ClipboardModule
   ],
   providers: [],
   exports: [],

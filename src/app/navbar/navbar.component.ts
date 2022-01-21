@@ -3,6 +3,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import {MatSlideToggleChange} from "@angular/material/slide-toggle";
+import { files } from '../contact-info/contact-data'
+
 
 
 @Component({
@@ -23,12 +25,26 @@ export class NavbarComponent {
 
   @Output()
   readonly darkModeSwitched = new EventEmitter<boolean>();
+  visitcard = 'John Doe\n';
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
-
-
+  constructor(private breakpointObserver: BreakpointObserver) {
+   this.createVisitCard();
+  }
 
   onDarkModeSwitched({ checked }: MatSlideToggleChange) {
     this.darkModeSwitched.emit(checked);
   }
+
+
+createVisitCard(){
+  let names: Array<any> = [];
+    files.map(file => {
+      file.children.map(child => {
+          names.push(child.name)
+      })
+    });
+   let visitcard = names.join('\n');
+   this.visitcard = this.visitcard + visitcard;
+}
+
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 import { FlatTreeControl } from '@angular/cdk/tree';
-import { files } from './example-data';
+import { files } from './contact-data';
 
 /** File node data with possible child nodes. */
 export interface FileNode {
