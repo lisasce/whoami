@@ -37,7 +37,7 @@ export class NavbarComponent {
 
 
 createVisitCard(){
-  let names: Array<any> = [];
+  let names: Array<string> = [];
     files.map(file => {
       file.children.map(child => {
           names.push(child.name)
