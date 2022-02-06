@@ -1,9 +1,5 @@
 @import '~src/theme';
 
-h1{
-  font-weight: bold;
-}
-
 .education{
   position: absolute; // needed here to overwrite mat-card position relative
   display: flex;

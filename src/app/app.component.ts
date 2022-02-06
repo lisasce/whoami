@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 
 
 @Component({
@@ -9,6 +9,8 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'whoami';
   selectedComponentFromCard = '';
+  @ViewChild("scrollIntoViewHelper")
+  scrollHelper: ElementRef<HTMLSpanElement> | undefined;
 
   get isDarkMode(): boolean {
     return this.currentTheme === 'theme-dark';
@@ -30,6 +32,9 @@ export class AppComponent {
 
 
   handleCardChange(recievedCardTitle: string) {
+    setTimeout( ()=> {
+      this.scrollHelper?.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 0 )
     this.selectedComponentFromCard = recievedCardTitle;
   }
 }

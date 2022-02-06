@@ -4,13 +4,9 @@
   justify-content: center;
   align-items: center;
 }
-h1{
-  font-weight: bold;
-  text-align: center;
-}
 
 .accordion{
-  width: 100%;
+  width: auto;
 }
 
 .button-box{
@@ -21,9 +17,8 @@ h1{
 
 div.content {
   width: 100%;
-  padding: 8%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 div.polaroid {
@@ -32,6 +27,8 @@ div.polaroid {
   border: 1px solid #BFBFBF;
   background-color: white;
   box-shadow: 10px 10px 5px #303030;
+  position: relative;
+  right: 55px;
 }
 
 div.rotate_left {
@@ -57,7 +54,6 @@ div.rotate_left {
   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
   rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset !important;
 }
-
 
 .hide{
   display: none;
